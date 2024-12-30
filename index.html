@@ -24,11 +24,30 @@
 
     /* photo */
     .photo-container {
+  max-height: 400px; /* Batasi tinggi maksimum */
+  overflow-y: auto; /* Aktifkan scroll secara vertikal */
+  padding: 10px;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 kolom */
+  grid-auto-rows: auto; /* Baris otomatis */
+  gap: 10px; /* Jarak antar elemen */
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px; /* Opsional: untuk sudut melengkung */
+}
+    .photo-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 20px;
-            width: 100%;
+            width: 80%;
         }
 
         .photo {
@@ -502,27 +521,27 @@ footer a {
         </div>
         <!-- Konten teks -->
         <div id="scroll-container" class="blocktext">
-          <p id="teks3" class="itim" style="font-size: 22px; margin-left: 40px">
+          <p id="teks3" class="itim" style="font-size: 24px; margin-left: 40px">
             <span class="pink">Hai</span> sayangkuuu cintakuuuuuu
             duniakuuu semestakuuu liakuuuuuuuuuu, <br><br /><b class="putih merah"><i>happy birthday yaaa 💐</i></b><br />semogaa
             dengan bertambahnya usiamuuu bisaa menjadiii
             pribadi yang lebih baikk, panjangg umurr, sehat selaluu, berbakti
             kepada orang tuaaa,  serta segala doa dan cita citamuuu dikabulkann
-            dan segala urusan dipermudahkannn, <i>aamiinnn</i>.<br /><br />udaa
+            dan segala urusan dipermudahkannn, <i>aminnn</i>.<br /><br />udaa
             semakin dewasaaa sajaa yaa kamu inii 😋 jangan pernah takut gagal
             yaaa, aku disiniii bakalan ngedukung kamuuuu selalu, jadiilahh
             anak yang baik ya sayangg, jangann lupa bersyukurrr,<br /><br />kalo ada apa apa cerita sama akuu yaa, jangan pernah di pendam sendiriii, akuu akan selalu ada buat kamuuu, <br/> <br/>maaf
             ya kalo aku blum bisa jadi apa yang kamu mauuu, dan maaf bgt kalo
-            selama ini aku banyak nuntut, sering buat masalah, maaf ya 🤗 aku selalu berdoaa
-            agar kamu tetap berada dalam lindungan-Nya, intinyaa tetep menjadi
+            selama ini aku banyak nuntut, sering buat masalah, maaf ya 🫠 aku selalu berdoaa
+            agar kamu tetap berada dalam lindungan-Nya, intinyaa tetep mnjdi
             pribadii yang lebih baikk dan sholihah.<br /><br />sekalilagii happy birthday
-            sayangkuuu cintakuuuuu, baarakallaahu fii umriki..🤲🤲 <br />
+            sayangkuuu cintakuuuuu, baarakallaahu fii umriki..
             <i>remain a good person whenever and wherever</i> 🥳💐🫶✨
           </p>
         </div>
       </div>
 
-<!-- Slide 4 -->
+      <!-- Slide 4 -->
 <div style="margin-top: 100px;" class="swiper-slide">
   <!-- Stiker dan teks -->
   <div style="margin-top: 100px; height: 100px; width: 100px;">
@@ -532,21 +551,22 @@ footer a {
     semoga segera serumah yaa.. aamiin 🫶<br /><br>
   </h1>
   <!-- Photo container -->
-  <div class="photo-container" style="display: grid; grid-template-columns: repeat(2, 1fr); max-height: 600px; overflow-y: scroll; gap: 10px; border: 1px solid #ccc; padding: 10px;">
-    <div class="photo"><img src="lia1.jpg" alt="Photo 1"></div>
-    <div class="photo"><img src="lia2.jpg" alt="Photo 2"></div>
-    <div class="photo"><img src="lia3.jpg" alt="Photo 3"></div>
-    <div class="photo"><img src="lia4.jpg" alt="Photo 4"></div>
-    <div class="photo"><img src="lia5.jpg" alt="Photo 5"></div>
-    <div class="photo"><img src="lia6.jpg" alt="Photo 6"></div>
-    <div class="photo"><img src="lia1.jpg" alt="Photo 1"></div>
-    <div class="photo"><img src="lia2.jpg" alt="Photo 2"></div>
-    <div class="photo"><img src="lia3.jpg" alt="Photo 3"></div>
-    <div class="photo"><img src="lia4.jpg" alt="Photo 4"></div>
-    <div class="photo"><img src="lia5.jpg" alt="Photo 5"></div>
-    <div class="photo"><img src="lia6.jpg" alt="Photo 6"></div>
+  <div class="photo-container" style="max-height: 400px; overflow-y: auto; border: 1px solid #ccc; padding: 10px;">
+    <div class="photo-grid">
+      <div class="photo"><img src="lia1.jpg" alt="Photo 1"></div>
+      <div class="photo"><img src="lia2.jpg" alt="Photo 2"></div>
+      <div class="photo"><img src="lia7.jpg" alt="Photo 3"></div>
+      <div class="photo"><img src="lia4.jpg" alt="Photo 4"></div>
+      <div class="photo"><img src="lia5.jpg" alt="Photo 5"></div>
+      <div class="photo"><img src="lia6.jpg" alt="Photo 6"></div>
+      <div class="photo"><img src="br1.jpg" alt="Photo 1"></div>
+      <div class="photo"><img src="li2.jpg" alt="Photo 2"></div>
+      <div class="photo"><img src="li1.jpg" alt="Photo 3"></div>
+      <div class="photo"><img src="br2.jpg" alt="Photo 4"></div>
+      <div class="photo"><img src="li3.jpg" alt="Photo 5"></div>
+      <div class="photo"><img src="br3.jpg" alt="Photo 6"></div>
 
-    <!-- Tambahkan lebih banyak foto jika diperlukan -->
+    </div>
   </div>
 </div>
 
@@ -717,3 +737,4 @@ footer a {
 </body>
 
 </html>
+
